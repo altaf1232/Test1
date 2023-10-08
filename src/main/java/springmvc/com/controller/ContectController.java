@@ -1,4 +1,6 @@
 package springmvc.com.controller;
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +12,30 @@ import springmvc.com.model.User;
 @Controller
 public class ContectController
 {
+	 
+	//how to fetch data in springmvc
+	// this is very old way fetch data in spring mvc
+	//this fist way
+	 // @GetMapping("/")
+	 // public String  showIndex1() 
+	  //{
+		//return "contect";  
+	  //}
+	
+	  //@RequestMapping("/contect")
+	  //public String  showForm1() 
+	  //{
+		//return"contect";
+	  //}
+	  //@RequestMapping(path="/processform", method =RequestMethod.POST)
+	 // public String handleform(HttpServletRequest request) 
+	 // { 
+	   // String email =request.getParameter("email");
+	   // System.out.println("user email is then print"+ email); 
+	 //   return " "; 
+	//  }
+	
+   //}
 	
 	 @GetMapping("/")
 	  public String  showIndex() 
